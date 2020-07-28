@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block body %}
+<div style="text-align: center;">
+    <h2>Classify</h2>
+
+    <br>
+
+    <form method="post" enctype="multipart/form-data" action="predict">
+
+        {% csrf_token %}
+        <div class="col-md-4 col-sm-4"><label for="fname"></label> </div> <input name="fileP" type="file"><br><br>
+        <br>
+
+
+        <input type="submit" value="classify"></div>
+
+</form>
+<br> {% endblock %}

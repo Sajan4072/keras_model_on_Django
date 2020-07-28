@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block body %}
+<div style="text-align: center;">
+    <h2>Classify</h2>
+
+    <br>
+
+    <form method="post" enctype="multipart/form-data" action="predict">
+
+        {% csrf_token %}
+        <div class="col-md-4 col-sm-4"><label for="fname"></label> </div> <input name="fileP" type="file"><br><br>
+        <br>
+
+
+        <input type="submit" value="classify"></div>
+
+<img src="{{path}}" width="500" height="500" style="display: block;margin-left: auto;margin-right: auto; margin-top: 9px;"> <br>
+<h2 style="text-align: center;">Prediction {{prediction}}</h2>
+<div class="t" style="text-align: center;">{{path}}</div>
+
+
+</form>
+<br> {% endblock %}
