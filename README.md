@@ -1,6 +1,6 @@
 # keras_model_on_Django
 
-Deploying a Keras deep learning model(mobilenet) using Django framework.
+Deploying a Keras's deep learning model(mobilenet) using Django framework.
 Mobilenet was trained on imagenet dataset.
 Mobilenet is lightweight in its architecture. It uses depthwise separable convolutions which basically means it performs a single convolution on each colour channel rather than combining all three and flattening it
 
